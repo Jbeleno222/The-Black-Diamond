@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background-color: rgb(247, 240, 240);
 }
 
 .logo h1 {
@@ -28,14 +29,16 @@
 .producto {
   width: 30%; 
   margin: 20px; 
-  border: 1px solid #ccc;
+  border: 1px solid #e0aaaa;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  background-color: #dbd4c4; 
 }
 
 .producto img {
-  max-width: 100%;
-  height: auto; /* Cambiado a auto para mantener la proporción */
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .producto a {
