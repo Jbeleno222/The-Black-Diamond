@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo Eterno - Tienda de Joyería</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1>The Black Diamond</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h1>Encuentra el brillo que mereces</h1>
+        <p>Joyas exclusivas diseñadas para cada ocasión especial</p>
+        <a href="#productos">Explorar Colección</a>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+        <h2>Nuestra Colección</h2>
+        <div class="productos">
+            <div class="producto" >
+                <img src="https://i.pinimg.com/736x/c6/57/dc/c657dccf9f53903c08325e69cad3ec24.jpg" alt="Anillo de oro" style="border-radius: 5px;">
+                <h3>Anillos</h3>
+                <p>Un diseño único para ocasiones especiales.</p>
+                <a href="html/anillo/anillo.html">Ver más</a>
+            </div>
+            <div class="producto">
+                <img src="https://i.pinimg.com/736x/38/28/eb/3828ebc0fce4959483e5ca63631c09b9.jpg"
+                    alt="Collar de diamantes" style="border-radius: 5px;">
+                <h3>Collares</h3>
+                <p>La perfección hecha joya.</p>
+                <a href="html/collares/collares.html">Ver más</a>
+            </div>
+            <div class="producto" >
+                <img src="img/aretes_nuevo.jpg"
+                    alt="Aretes de perlas" style="margin-top: 90px; border-radius: 5px;">
+                <h3 style="margin-top: 30px;">Aretes</h3>
+                <p st>Elegancia que nunca pasa de moda.</p>
+                <a href="html/collares/collares.html">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Brillo Eterno, creamos piezas únicas que combinan elegancia y tradición. Cada joya es cuidadosamente
+            elaborada con los mejores materiales y un diseño exclusivo que resalta tu estilo único.</p>
+        <p>Con más de 20 años de experiencia, somos tu elección ideal para momentos especiales.</p>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios">
+            <div class="testimonio">
+                <p>"El collar que compré fue perfecto para mi boda. La calidad y el diseño son excepcionales."</p>
+                <span>- María López</span>
+            </div>
+            <div class="testimonio">
+                <p>"Los aretes que compré como regalo de aniversario fueron un éxito. Muchas gracias."</p>
+                <span>- Pedro Martínez</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="formulario" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+        <script src="./funtions.js"></script>
+
+    <!-- Pie de Página -->
+    <footer>
+        <section class="partFooter">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61573187347888"
+                    target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+                        <path fill="#fff"
+                            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                    </svg></a>
+                
+                <a href="https://www.instagram.com/the_black_diamond2909/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="45"
+                        height="45" viewBox="0 0 24 24">
+                        <path fill="#fff"
+                            d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2" />
+                    </svg></a>
+                
+                <a href="https://wa.me/+573108872690" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                        viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path
+                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="#fff"
+                                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.863-1.26l-.305-.178l-3.032.892a1.01 1.01 0 0 1-1.28-1.145l.026-.109l.892-3.032A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2m0 2a8 8 0 0 0-6.759 12.282c.198.312.283.696.216 1.077l-.039.163l-.441 1.501l1.501-.441c.433-.128.883-.05 1.24.177A8 8 0 1 0 12 4M9.102 7.184a.7.7 0 0 1 .684.075c.504.368.904.862 1.248 1.344l.327.474l.153.225a.71.71 0 0 1-.046.864l-.075.076l-.924.686a.23.23 0 0 0-.067.291c.21.38.581.947 1.007 1.373c.427.426 1.02.822 1.426 1.055c.088.05.194.034.266-.031l.038-.045l.601-.915a.71.71 0 0 1 .973-.158l.543.379c.54.385 1.059.799 1.47 1.324a.7.7 0 0 1 .089.703c-.396.924-1.399 1.711-2.441 1.673l-.159-.01l-.191-.018l-.108-.014l-.238-.04c-.924-.174-2.405-.698-3.94-2.232c-1.534-1.535-2.058-3.016-2.232-3.94l-.04-.238l-.025-.208l-.013-.175l-.004-.075c-.038-1.044.753-2.047 1.678-2.443" />
+                        </g>
+                    </svg></a>
+            </div>
+        </section>
+        <p>&copy; 2024 Brillo Eterno - Todos los derechos reservados.</p>
+        <script src="https://kit.fontawesome.com/4fc7dbea62.js" crossorigin="anonymous"></script>
+    </footer>
+    <script src="js/funtions.js"></script>
+</body>
+
+</html>
