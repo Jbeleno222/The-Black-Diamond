@@ -1,20 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+:root{
+  --gold-royal: #d4af37;
+  --silver-elegant: #c0c0c0;
+  --bronze-classic: #8c7853;
+  --gold-bright: #e5c100;
+
+  /* Colores secundarios */
+  --black-deep: #1c1c1c;
+  --purple-imperial: #4b0082;
+  --red-garnet: #800000;
+  --green-emerald: #004225;
+  --blue-sapphire: #0f52ba;
+
+  /* Colores neutros */
+  --white-pearl: #f5f5f5;
+  --gray-platinum: #a9a9a9;
+}
+
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gilda Display", serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #cacaca;
 }
 
 /* ENCABEZADO */
 header {
   background-color: #f0f0f0;
-  padding: 20px;
-  display: flex;
+  padding: 10px;
+  display: flex; 
   position: sticky;
   top: 0;
   z-index: 100;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .logo {
@@ -26,13 +48,14 @@ header {
 
 .logo h1 {
   padding: 10px;
-  font-size: 24px;
+  font-size: 24px; 
   font-weight: bold;
 }
 
 .logo img{
   width: 100px;
 }
+
 
 nav ul {
   list-style: none;
@@ -41,33 +64,31 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 10px; 
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: black; 
   font-size: 24px;
   font-weight: bold;
-  
 }
 
 nav a:hover {
   color: #6e7234;
-  
 }
 
 /* Sección Hero */
 .hero {
   text-align: center;
-  color: #333;
+  color: #333; 
   padding: 150px 0;
-  background-color: #ffebaef2;
+  background-color: #d4d2cbf2;
 }
 
 .hero h1 {
   font-size: 3rem;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif; 
   margin-bottom: 20px;
 }
 
@@ -83,7 +104,7 @@ nav a:hover {
 
 /* Sección productos */
 #productos {
-  text-align: center;
+  text-align: center; 
   height: auto; /* Cambiado a auto para mejor responsividad */
   margin-top: 100px;
 }
@@ -94,28 +115,27 @@ nav a:hover {
 }
 
 .productos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
 }
 
 .producto:hover {
-  background-color: #ffebaef2;
+  background-color:  #e2dfd6f2;
 }
 
 .producto {
-  width: 30%;
-  margin: 20px;
+  width: 30%; 
+  margin: 20px; 
   border: 1px solid #ccc;
   padding: 20px;
-  box-sizing: border-box;
-  border-radius: 10px;
+  box-sizing: border-box; 
 }
 
 .producto img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  border-radius: 10px;
 }
 
 .producto a {
@@ -129,28 +149,28 @@ nav a:hover {
 
 /* Sobre nosotros */
 #nosotros {
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f0f0;
+  text-align: center; 
+  padding: 50px; 
+  background-color: #f0f0f0; 
 }
 
 #nosotros h2 {
-  font-size: 46px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 46px; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
 }
 
 #nosotros p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #555;
+  font-size: 18px; 
+  line-height: 1.5; 
+  color: #555; 
 }
 
 /* Sección de testimonio */
 #testimonios {
   text-align: center;
   padding: 50px;
-  background-color: #ffebaef2;
+  background-color: #d4d2cbf2; 
 }
 
 #testimonios h2 {
@@ -161,7 +181,7 @@ nav a:hover {
 
 .testimonios {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -174,7 +194,7 @@ nav a:hover {
 }
 
 .testimonio:hover {
-  background-color: rgb(255, 194, 95);
+  background-color: var(--white-pearl);
 }
 
 .testimonio p {
@@ -193,7 +213,7 @@ nav a:hover {
   text-align: center;
   padding: 50px;
   margin: 150px;
-  background-color: #ffebaef2;
+  background: var(--gray-platinum);
 }
 
 #contacto h2 {
@@ -230,7 +250,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #ffebaef2;
+  background-color: #b06c00;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -239,7 +259,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #b06c00;
+  background-color: var(--bronze-classic); 
 }
 
 /* Pie de página */
@@ -270,36 +290,37 @@ footer p {
   justify-content: center;
 }
 
-.social-media a {
+.social-media a { 
   padding: 10px;
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 375px) {
   .producto {
-    width: 100%;
+      width: 100%; 
   }
+  
 
   .testimonio {
-    width: 100%;
+      width: 100%; 
   }
 
   .hero h1 {
-    font-size: 2rem;
+      font-size: 2rem; 
   }
   .hero p {
-    font-size: 1rem;
+      font-size: 1rem; 
   }
 
   nav a {
-    font-size: 18px;
+      font-size: 18px; 
   }
 
   form {
-    max-width: 90%;
+      max-width: 90%;
   }
 
   #contacto {
-    margin: 50px;
-  }
+    margin: 50px; 
 }
+} 
