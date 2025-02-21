@@ -22,13 +22,13 @@
 }
 
 .producto:hover {
-  background-color: #f4cf76;
+  background-color: #dbcfb3;
 }
 
 .producto {
   width: 30%; 
   margin: 20px; 
-  border: 1px solid #ccc;
+  border: 1px solid #cccabf;
   padding: 20px;
   box-sizing: border-box; 
 }
